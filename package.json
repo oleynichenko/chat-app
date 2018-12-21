@@ -1,0 +1,26 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "test"
+  },
+  "engines": {
+    "node": "10.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleynichenko/chat-app.git"
+  },
+  "author": "Oleynichenko Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleynichenko/chat-app/issues"
+  },
+  "homepage": "https://github.com/oleynichenko/chat-app#readme",
+  "dependencies": {
+    "express": "4.16.4"
+  }
+}
