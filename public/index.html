@@ -5,22 +5,27 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>App Chat</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Join | ChatApp</title>
 </head>
-<body>
-  <p>Welcome to App Chat</p>
-  <ol id="messages"></ol>
-  <form id="message-form">
-    <input type="text" name="message" placeholder="Message">
-    <button>Send</button>
+<body class="centered-form">
+<div class="centered-form__form">
+  <form action="/chat.html">
+    <div class="form-field">
+      <h3>Join a Chat</h3>
+    </div>
+    <div class="form-field">
+      <label for="name">Display name</label>
+      <input type="text" id="name" name="name" autofocus>
+    </div>
+    <div class="form-field">
+      <label for="room">Room name</label>
+      <input type="text" id="room" name="room">
+    </div>
+    <div class="form-field">
+      <button>Join</button>
+    </div>
   </form>
-  <br>
-  <button id="send-location">Send Location</button>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="/js/index.js"></script>
+</div>
 </body>
 </html>
